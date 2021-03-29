@@ -96,13 +96,11 @@ def FastaSeqReverser():
     fo.close()
 
 
-if len(sys.argv) != 3: #if the length of argv is not equal to 3, then print warning message
-    print "This is a script to cleave the current FASTA input into fragments (default size: 50 nt) and generate reverse complemantary sequence of each fragments   "
-    print "Input: Any multi-FASTA DNA file, but with ONE-LINE sequences"
-    print "If the FASTA sequences are not one-line, please use FastaSeqLinearizer to convert it to one-line sequences first"
-    print "or it will only reverse complement the seq fragments that are in the same line , but not the full sequences"
-    print "Usage: [FastaSeqReverser.py] [FASTA DNA Input] [FASTA DNA Output]"
+if len(sys.argv) != 3:
+    print("This is a script to cleave the current FASTA input into fragments (default size: 50 nt) and generate reverse complemantary sequence of each fragments")
+    print("Input: Any multi-FASTA DNA file, but with ONE-LINE sequences")
+    print("If the FASTA sequences are not one-line, please use FastaSeqLinearizer to convert it to one-line sequences first")
+    print("or it will only reverse complement the seq fragments that are in the same line , but not the full sequences")
+    print("Usage: [FastaSeqReverser.py] [FASTA DNA Input] [FASTA DNA Output]")
 else:
     FastaSeqReverser()
-
-
