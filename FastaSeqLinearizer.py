@@ -15,13 +15,13 @@ def FastaSeqLinearizer():
 
     for line in fi:
         if line[0] == '>':
-            fo.writelines(Seq)      #Last line before the current header
+            fo.writelines(Seq)
             if Seq!="": fo.writelines("\n")
-            fo.writelines(line)     #Current header
+            fo.writelines(line)
             Seq=""
         else:
             Seq=Seq+line.strip()
-            if line is lines[-1]:     #is: really the last line, different from ==
+            if line is lines[-1]:
                 fo.writelines(Seq+"\n")
 
     fi.close()
