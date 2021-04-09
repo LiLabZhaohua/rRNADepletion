@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import sys
 #version: 2018-12-20, Hanwen Gu
 
@@ -23,7 +23,7 @@ def Complementer(String):
             StringList[i] = "G"
         elif StringList[i] == "c":
             StringList[i] = "g"
-        # For degenerated bases:
+        # For degenerate nucleotides:
         elif StringList[i] == "W":
             StringList[i] = "S"
         elif StringList[i] == "w":
