@@ -13,7 +13,7 @@ def FastaSeqLinearizer():
 
     lines=fi.readlines()
 
-    for line in fi:
+    for line in lines:
         if line[0] == '>':
             fo.writelines(Seq)
             if Seq!="": fo.writelines("\n")
@@ -28,7 +28,7 @@ def FastaSeqLinearizer():
     fo.close()
 
 if len(sys.argv) != 3:
-    print("This is a script to linerarize multi-line FASTA sequences. It will change the format into one-line header with one-line sequences below")
+    print("This is a script to linerarize multi-line FASTA sequences. It will output one-line header with one-line sequence below")
     print("Usage: [FastaSeqLinearizer.py] [Fasta Input] [Fasta Output]")
 else:
     FastaSeqLinearizer()
