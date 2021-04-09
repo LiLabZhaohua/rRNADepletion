@@ -39,6 +39,6 @@ cd rRNADepletion && chmod +x *py
 
 4, Remove multi-mapping probe sequences using UCSC BLAT against galGal6 chicken genome:
 
-[UCSC genome browser for galGal6([https://genome.ucsc.edu/cgi-bin/hgTracks?db=galGal6&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr4%3A45667317%2D45670831&hgsid=1081465641_QMMF8QE7gaanGBtavq0aDOgVnEn3)
+[UCSC genome browser for galGal6(https://genome.ucsc.edu/cgi-bin/hgTracks?db=galGal6&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr4%3A45667317%2D45670831&hgsid=1081465641_QMMF8QE7gaanGBtavq0aDOgVnEn3)
 
 [UCSC BLAT for galGal6](https://genome.ucsc.edu/cgi-bin/hgBlat?hgsid=1081465641_QMMF8QE7gaanGBtavq0aDOgVnEn3&command=start)
